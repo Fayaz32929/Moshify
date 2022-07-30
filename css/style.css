@@ -125,3 +125,21 @@ a{
     }
     
 }
+/* icons */
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.icon--primery{
+    fill: var(--color-primery);
+
+}
+.icon-container{
+    background-color:#f3f9fa ;
+    width: 64px;
+    height: 64px;
+    display: inline-flex;
+    border-radius:100% ;
+    align-items: center;
+    justify-content: center;
+}
