@@ -6,13 +6,16 @@
     --color-body: #918ca4 ;
     
 }
+*,*::after,*::before{
+    box-sizing: border-box;
+}
 /* typography */
 html{
     font-size: 62.5%;
 }
 body{
-    font-family: Inter,Arial, Helvetica, sans-serif;
     color: var(--color-body);
+    font-family: Inter,Arial, Helvetica, sans-serif;
     font-size: 2.4rem;
     line-height: 1.5;
 }
@@ -135,11 +138,65 @@ a{
 
 }
 .icon-container{
-    background-color:#f3f9fa ;
-    width: 64px;
-    height: 64px;
-    display: inline-flex;
-    border-radius:100% ;
     align-items: center;
+    background-color:#f3f9fa ;
+    border-radius:100% ;
+    display: inline-flex;
+    height: 64px;
     justify-content: center;
+    width: 64px;
+}
+/* buttions */
+.btn{
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 2rem 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.btn--primery{
+    background-color: var(--color-primery);
+    color: #fff;
+}
+.btn--primery:hover{
+    background-color:#3a8ffd ;
+}
+.btn--secondery{
+    background-color: var(--color-secondery);
+    color: #fff;
+}
+.btn--secondery:hover{
+    background: #00c8eb;
+}
+.btn--accent{
+    background-color: var(--color-accent);
+    color: #fff;
+}
+.btn--accent:hover{
+    background: #fd4516;
+}
+.btn--outline{
+    background-color: #fff;
+    border: 2px solid var(--color-heading);
+    color: var(--color-heading);
+}
+.btn--outline:hover{
+    background: var(--color-heading);
+    color: #fff;
+}
+.btn--block{
+    display: inline-block;
+    width: 100%;
+}
+@media screen and(min-width:1024px) {
+    .btn{
+        font-size: 1.5rem;
+    }
+    
 }
