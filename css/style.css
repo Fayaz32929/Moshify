@@ -134,9 +134,15 @@ a{
     width: 40px;
     height: 40px;
 }
+.icon__small{
+    width: 30px;
+    height: 30px;
+}
 .icon--primery {
     fill: var(--color-primery);
-
+}
+.icon--white{
+    fill: #fff;
 }
 .icon-container{
     align-items: center;
@@ -146,6 +152,9 @@ a{
     height: 64px;
     justify-content: center;
     width: 64px;
+}
+.icon-container--accent{
+    background: var(--color-accent);
 }
 /* buttions */
 .btn{
@@ -351,3 +360,48 @@ overflow: hidden;
     .quote__organization{
         font-size: 1.6rem;
     }}
+
+/* Grids */
+.grid{
+    display: grid;
+}
+@media screen and (min-width:768px) {
+    .grid--1x2{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+@media screen and (min-width:1024px) {
+    .grid--1x3{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+.testimonial{
+    padding: 3rem;
+}
+.testimonial__image{
+    position: relative;
+    margin: 0 3rem;
+}
+.testimonial__image>img{
+    width: 100%;
+}
+.testimonial__image>.icon-container{
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+}
+@media screen and (min-width) {
+    .testimonial__image{
+        margin: o;
+    }
+    .testimonial .quote,
+    .testimonial .quote__author{
+        font-size: 2.4rem;
+    }
+    .testimonial .quote{
+        margin-left: 6rem;
+        margin-right: 0;
+    }
+    
+}
