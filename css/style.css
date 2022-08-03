@@ -257,9 +257,13 @@ a{
 border-radius:7px ;
 box-shadow:  0 0 20px 10px #f3f3f3;
 overflow: hidden;
+transition: 0.15s;
 }
 .card__header,.card__body{
     padding: 2rem 3rem;
+}
+.plan__popular{
+    padding-bottom: 4rem;
 }
 .card--secondery .card__header{
     color: #fff;
@@ -287,7 +291,7 @@ overflow: hidden;
     opacity: 0.8;
     margin-right: 1rem;
 }
-.plan_decription{
+.plan__description{
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 1px;
@@ -296,8 +300,17 @@ overflow: hidden;
 .plan .list__item{
     margin-bottom: 2rem;
 }
+.plan--popular{
+    transform: scale(1.1);
+}
 .plan--popular .card__header{
     position: relative;
+}
+.plan:hover{
+    transform: scale(1.05);
+}
+.plan--popular:hover{
+    transform: scale(1.15);
 }
 .plan--popular .card__header::before{
     content: url(../images/popular.svg);
@@ -604,4 +617,13 @@ overflow: hidden;
     .block-domain__prices{
         grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
     }
+}
+/* plan blocks */
+.block--plans .grid{
+    gap:8rem 4rem;
+
+}
+.block--plans .card{
+    max-width: 500px;
+    margin: 0 auto;
 }
