@@ -107,8 +107,7 @@ a{
 /* lists */
 .list{
     list-style: none;
-    padding: 0;
-    color: var(--color-heading);
+    padding-left: 0;
 
 }
 .list--inline .list__item{
@@ -336,6 +335,8 @@ transition: 0.15s;
 }
 .media{
     display: flex;
+    margin-bottom: 4rem;
+
 }
 .media__title{
     margin-top: 0;
@@ -644,10 +645,30 @@ margin: 12rem 0;
 @media screen and (min-width:768px) {
     .feature:nth-of-type(even) .feature__content{
         order: 2;
-
     }
-    
 }
+
+.block-showcase__image>img{
+    width: 100%;
+}
+@media screen and (min-width:768px) {
+    .block-showcase .grid{
+        grid-template-columns: 50% 50%;
+    }
+    .block-showcase__image{
+        justify-self: end;
+    }
+    .block-showcase__image>img{
+        width: auto;
+        max-width: 700px;
+    }
+}
+.media__title{
+    color: rgb(247, 232, 232);
+  }
+  .media__body{
+    color: #9ca0a3;
+  }
 
 
 
