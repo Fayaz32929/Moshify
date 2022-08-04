@@ -500,6 +500,7 @@ transition: 0.15s;
 }
 .block__header{
     text-align: center;
+    margin-bottom: 4rem;
 }
 .block__heading{
     margin-top: 0;
@@ -663,12 +664,12 @@ margin: 12rem 0;
         max-width: 700px;
     }
 }
-.media__title{
+/* .media__title{
     color: rgb(247, 232, 232);
-  }
-  .media__body{
+} */
+.media__body{
     color: #9ca0a3;
-  }
+}
 
 
 
